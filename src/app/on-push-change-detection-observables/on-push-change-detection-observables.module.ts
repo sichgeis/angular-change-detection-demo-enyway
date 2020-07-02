@@ -17,28 +17,32 @@ import {ComponentFourteen} from './component-fourteen/component-fourteen.compone
 import {ComponentFiveteen} from './component-fiveteen/component-fiveteen.component';
 import {ComponentSixteen} from './component-sixteen/component-sixteen.component';
 import {ComponentSeventeen} from './component-seventeen/component-seventeen.component';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
-    declarations: [
-        OnPushChangeDetectionObservablesComponent,
-        ComponentOne,
-        ComponentTwo,
-        ComponentThree,
-        ComponentFour,
-        ComponentFive,
-        ComponentSix,
-        ComponentSeven,
-        ComponentEight,
-        ComponentNine,
-        ComponentTen,
-        ComponentEleven,
-        ComponentTwelve,
-        ComponentThirteen,
-        ComponentFourteen,
-        ComponentFiveteen,
-        ComponentSixteen,
-        ComponentSeventeen
-    ]
+  imports: [
+    CommonModule
+  ],
+  declarations: [
+    OnPushChangeDetectionObservablesComponent,
+    ComponentOne,
+    ComponentTwo,
+    ComponentThree,
+    ComponentFour,
+    ComponentFive,
+    ComponentSix,
+    ComponentSeven,
+    ComponentEight,
+    ComponentNine,
+    ComponentTen,
+    ComponentEleven,
+    ComponentTwelve,
+    ComponentThirteen,
+    ComponentFourteen,
+    ComponentFiveteen,
+    ComponentSixteen,
+    ComponentSeventeen
+  ]
 })
 export class OnPushChangeDetectionObservablesModule {
 

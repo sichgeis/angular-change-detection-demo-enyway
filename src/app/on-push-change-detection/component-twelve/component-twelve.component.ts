@@ -7,9 +7,7 @@ import {toggleClass} from '../../toggle-class.service';
 
 @Component({
   selector: 'cmp-twelve',
-  template: `
-    <a class="click-me" (click)="triggerChangeDetection()">Cmp12</a>
-  `
+  template: '<a class="click-me" (click)="triggerChangeDetection()">Cmp12</a>'
 })
 export class ComponentTwelve implements DoCheck {
 

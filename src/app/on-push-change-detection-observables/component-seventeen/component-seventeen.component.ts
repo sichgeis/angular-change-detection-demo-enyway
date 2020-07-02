@@ -7,9 +7,8 @@ import {Subject} from 'rxjs';
 
 @Component({
   selector: 'cmp-seventeen',
-  template: `
-    <a class="on-push subscriber">Cmp17 {{foo}}</a>
-  `,
+  template: '<a class="on-push subscriber">Cmp17 <br> {{ foo }}</a>',
+//  template: '<a class="on-push subscriber">Cmp17 <br> {{model | async}}</a>',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ComponentSeventeen implements OnInit, DoCheck {
@@ -24,7 +23,7 @@ export class ComponentSeventeen implements OnInit, DoCheck {
     this.model.subscribe(res => {
       console.log(res);
       this.foo = res;
-      this.cd.markForCheck();
+//      this.cd.markForCheck();
       toggleClass(this.el, this.zone, 'checked-observable');
     });
   }
